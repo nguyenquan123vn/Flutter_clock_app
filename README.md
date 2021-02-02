@@ -2,7 +2,6 @@ Simple flutter clock app
 
 Simple flutter clock app for Mobile Cloud Computing Class
 
-
 Directory structure:
 
 ``` bash
@@ -18,6 +17,9 @@ Directory structure:
 
 
 Basic functions:
+
 Alarm: to be updated
+
 Clock: to be updated
+
 Stopwatch: done, have start and reset the stopwatch function
