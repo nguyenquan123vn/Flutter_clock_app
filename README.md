@@ -18,8 +18,8 @@ Directory structure:
 
 Basic functions:
 
-Alarm: to be updated
++ Alarm: to be updated
 
-Clock: to be updated
++ Clock: to be updated
 
-Stopwatch: done, have start and reset the stopwatch function
++ Stopwatch: done, have start and reset the stopwatch function
