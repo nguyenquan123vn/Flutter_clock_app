@@ -12,8 +12,8 @@ class ClockController extends StatefulWidget {
 class _ClockState extends State<ClockController> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
-    Alarm(),
-    Clock(),
+    ClockScreen(),
+    AlarmScreen(),
     StopwatchScreen()
   ];
 
@@ -26,28 +26,18 @@ class _ClockState extends State<ClockController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: <Widget>[
-          Container(
-            child: Align(
-              alignment: Alignment.topLeft,
-              child: TextButton(onPressed: null, child: Text('Edit')),
-            ),
-          )
-        ],
-      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.alarm),
-            label: 'Alarm',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.watch_later_outlined),
             label: 'Clock',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.alarm),
+            label: 'Alarm',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.timer),
@@ -56,6 +46,7 @@ class _ClockState extends State<ClockController> {
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.red[900],
+        unselectedItemColor: Colors.white,
         onTap: _onTapped,
       ),
     );

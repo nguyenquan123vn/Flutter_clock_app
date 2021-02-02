@@ -13,8 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Clock',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primaryColor: Colors.black,
+        canvasColor: Colors.black,
+        bottomAppBarColor: Colors.black,
+        buttonColor: Colors.yellow,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(primary: Colors.red[700])),
       ),
       home: ClockController(),
     );

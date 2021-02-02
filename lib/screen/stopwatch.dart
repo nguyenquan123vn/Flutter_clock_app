@@ -51,13 +51,16 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Stopwatch'),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               formatTime(_stopwatch.elapsedMilliseconds),
-              style: TextStyle(fontSize: 72.0),
+              style: TextStyle(fontSize: 72.0, color: Colors.pink),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -66,7 +69,7 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
                     onPressed: handleStartStop,
                     child: Text(_stopwatch.isRunning ? 'Stop' : 'Start')),
                 SizedBox(
-                  width: 10,
+                  width: 20,
                 ),
                 ElevatedButton(onPressed: handleReset, child: Text('Reset'))
               ],

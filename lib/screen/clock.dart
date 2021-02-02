@@ -1,13 +1,29 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
-class Clock extends StatefulWidget {
+import '../clock/clockBody.dart';
+
+enum Choice { WorldTime, CurrentTime }
+
+class ClockScreen extends StatefulWidget {
   @override
-  _ClockState createState() => _ClockState();
+  _ClockScreenState createState() => _ClockScreenState();
 }
 
-class _ClockState extends State<Clock> {
+class _ClockScreenState extends State<ClockScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Clock"),
+        ),
+        body: Center(
+          child: Container(
+            height: 300,
+            width: 300,
+            child: ClockBody(),
+          ),
+        ));
   }
 }

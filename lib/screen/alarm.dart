@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Alarm extends StatefulWidget {
+class AlarmScreen extends StatefulWidget {
   @override
-  _AlarmState createState() => _AlarmState();
+  _AlarmScreenState createState() => _AlarmScreenState();
 }
 
-class _AlarmState extends State<Alarm> {
+class _AlarmScreenState extends State<AlarmScreen> {
   @override
   Widget build(BuildContext context) {
     return Container();
