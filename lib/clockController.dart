@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'screen/alarm.dart';
+import 'screen/clock.dart';
+import 'screen/stopwatch.dart';
+
 class ClockController extends StatefulWidget {
   @override
   _ClockState createState() => _ClockState();
@@ -7,21 +11,10 @@ class ClockController extends StatefulWidget {
 
 class _ClockState extends State<ClockController> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    )
+  static List<Widget> _widgetOptions = <Widget>[
+    Alarm(),
+    Clock(),
+    StopwatchScreen()
   ];
 
   void _onTapped(int index) {
@@ -33,26 +26,36 @@ class _ClockState extends State<ClockController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: <Widget>[
+          Container(
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: TextButton(onPressed: null, child: Text('Edit')),
+            ),
+          )
+        ],
+      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+            icon: Icon(Icons.alarm),
+            label: 'Alarm',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.watch_later_outlined),
+            label: 'Clock',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'Business',
+            icon: Icon(Icons.timer),
+            label: 'Stopwatch',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue[800],
+        selectedItemColor: Colors.red[900],
         onTap: _onTapped,
       ),
     );
