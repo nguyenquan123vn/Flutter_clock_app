@@ -18,7 +18,6 @@ Directory structure:
     │   └───clockNumber.dart
     │
     └───screen
-        ├───alarm.dart
         ├───clock.dart
         ├───locationList.dart
         └───stopwatch.dart
@@ -27,8 +26,6 @@ Directory structure:
 
 Basic functions:
 
-+ Alarm: to be updated
-
-+ Clock: to be updated
++ Clock: clock show current time
 
 + Stopwatch: done, have start and reset the stopwatch function
