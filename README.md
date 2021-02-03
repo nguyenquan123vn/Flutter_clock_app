@@ -5,13 +5,22 @@ Simple flutter clock app for Mobile Cloud Computing Class
 Directory structure:
 
 ``` bash
-├───lib
+└───lib
     ├───clockController.dart
     ├───main.dart
+    │
+    ├───clock
+    │   ├───clockBody.dart
+    │   ├───clockFace.dart
+    │   ├───clockHandHour.dart
+    │   ├───clockHandMinutes.dart
+    │   ├───clockHands.dart
+    │   └───clockNumber.dart
     │
     └───screen
         ├───alarm.dart
         ├───clock.dart
+        ├───locationList.dart
         └───stopwatch.dart
 ```
 
