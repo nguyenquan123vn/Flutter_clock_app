@@ -8,10 +8,10 @@ class StopwatchScreen extends StatefulWidget {
 
 String formatTime(int milisec) {
   var secs = milisec ~/ 1000;
-  var hours = (secs ~/ 3600).toString().padLeft(2, '0');
   var minutes = ((secs % 3600) ~/ 60).toString().padLeft(2, '0');
   var seconds = (secs % 60).toString().padLeft(2, '0');
-  return "$hours:$minutes:$seconds";
+  var milisecs = ((milisec % 1000) ~/ 10).toString().padLeft(2, '0');
+  return "$minutes:$seconds:$milisecs";
 }
 
 class _StopwatchScreenState extends State<StopwatchScreen> {
@@ -51,27 +51,35 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Stopwatch'),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               formatTime(_stopwatch.elapsedMilliseconds),
-              style: TextStyle(fontSize: 72.0, color: Colors.pink),
+              style: TextStyle(fontSize: 84.0, color: Colors.white),
+            ),
+            SizedBox(
+              height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 ElevatedButton(
                     onPressed: handleStartStop,
-                    child: Text(_stopwatch.isRunning ? 'Stop' : 'Start')),
+                    child: Text(
+                      _stopwatch.isRunning ? 'Stop' : 'Start',
+                      style: TextStyle(fontSize: 30.0),
+                    )),
                 SizedBox(
-                  width: 20,
+                  width: 30,
                 ),
-                ElevatedButton(onPressed: handleReset, child: Text('Reset'))
+                ElevatedButton(
+                    onPressed: handleReset,
+                    child: Text(
+                      'Reset',
+                      style: TextStyle(fontSize: 30.0),
+                    ))
               ],
             )
           ],
