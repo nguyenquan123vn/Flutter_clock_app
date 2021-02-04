@@ -47,25 +47,28 @@ Cần thực hiện thêm: Có thể chọn múi giờ các nhau để đồng h
 Màn hình đồng hồ chỉ thời gian hiện tại:
 
 
-![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/clock_screen.PNG)
+<img src="https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/clock_screen.PNG" width="200">
+
 
 
 Màn hình đồng hồ bấm giờ (hoặc sau khi chọn nút Reset):
 
 
-![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/stopwatch_screen.PNG)
+<img src="https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/stopwatch_screen.PNG" width="200">
 
 
 Bắt đầu đồng hồ bấm giờ:
 
 
-![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/run_stopwatch.PNG)
+<img src="https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/run_stopwatch.PNG" width="200">
+
 
 
 Dừng đồng hồ bấm giờ:
 
 
-![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/stopwatch_stop.PNG)
+<img src="https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/stopwatch_stop.PNG" width="200">
+
 
 
 
