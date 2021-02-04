@@ -1,8 +1,14 @@
-Simple flutter clock app
+Ứng dụng đồng hồ đơn giản
 
-Simple flutter clock app for Mobile Cloud Computing Class
 
-Directory structure:
+Họ và tên: Nguyễn Hồng Quân
+
+
+MSSV:17021324
+
+
+Cấu trúc thư mục mã nguồn:
+
 
 ``` bash
 └───lib
@@ -24,36 +30,42 @@ Directory structure:
 ```
 
 
-Basic functions:
-
-+ Clock: clock show current time
-
-+ Stopwatch: done, have start and reset the stopwatch function
+Chức năng cơ bản:
 
 
-Demo screenshots:
++ Đồng hồ: Đồng hồ kim chỉ thời gian hiện tại
+
++ Đồng hồ bấm giờ: Đồng hồ bấm giờ theo định dạng phút:giây:mili giây với mili giây được làm tròn tới 2 chữ số, có các chức năng cơ bản như bắt đầu, dừng và bắt đầu lại
 
 
-Clock screen show the current local time:
+Cần thực hiện thêm: Có thể chọn múi giờ các nhau để đồng hồ chỉ thời gian của múi giờ đó
+
+
+Ảnh màn hình demo:
+
+
+Màn hình đồng hồ chỉ thời gian hiện tại:
 
 
 ![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/clock_screen.PNG)
 
 
-Stopwatch screen:
+Màn hình đồng hồ bấm giờ (hoặc sau khi chọn nút Reset):
 
 
 ![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/stopwatch_screen.PNG)
 
 
-Stopwatch screen start:
+Bắt đầu đồng hồ bấm giờ:
 
 
 ![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/run_stopwatch.PNG)
 
 
-Stopwatch screen stop:
+Dừng đồng hồ bấm giờ:
 
 
 ![alt text](https://github.com/nguyenquan123vn/Flutter_clock_app/blob/main/demo/stopwatch_stop.PNG)
+
+
 
